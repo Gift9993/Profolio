@@ -32,14 +32,16 @@ themeToggle.addEventListener("click", () => {
 
 const pfpElement = document.getElementById("profile-pic"); // assuming your PFP has an ID of 'pfp'
 const images = [
-  "/Personal Profile Page/pfp.jpeg",
-  "/Personal Profile Page/naruto.jpeg",
-  "/Personal Profile Page/Breathtaking Naruto 4K Wallpaper for Your Screen.jpeg",
-  "/Personal Profile Page/Gojo wallpaper.jpeg",
+  "/aot.jpeg",
+  "/dark.jpeg",
+  "/Gojo wallpaper.jpeg",
+  "/naruto.jpeg",
+  "/naruto2.jpeg",
+  "/pfp.jpeg",
 ]; // array of image sources
 let currentImageIndex = 0;
 
 setInterval(() => {
   pfpElement.src = images[currentImageIndex];
   currentImageIndex = (currentImageIndex + 1) % images.length;
-}, 5000); // 10000ms = 10 seconds
+}, 10000); // 10000ms = 10 seconds
