@@ -32,12 +32,12 @@ themeToggle.addEventListener("click", () => {
 
 const pfpElement = document.getElementById("profile-pic"); // assuming your PFP has an ID of 'pfp'
 const images = [
-  "/aot.jpeg",
-  "/dark.jpeg",
-  "/Gojo wallpaper.jpeg",
-  "/naruto.jpeg",
-  "/naruto2.jpeg",
-  "/pfp.jpeg",
+  "aot.jpeg",
+  "dark.jpeg",
+  "Gojo wallpaper.jpeg",
+  "naruto.jpeg",
+  "naruto2.jpeg",
+  "pfp.jpeg",
 ]; // array of image sources
 let currentImageIndex = 0;
 
