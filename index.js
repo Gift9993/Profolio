@@ -44,4 +44,4 @@ let currentImageIndex = 0;
 setInterval(() => {
   pfpElement.src = images[currentImageIndex];
   currentImageIndex = (currentImageIndex + 1) % images.length;
-}, 10000); // 10000ms = 10 seconds
+}, 5000);
