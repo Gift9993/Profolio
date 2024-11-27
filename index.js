@@ -1,20 +1,11 @@
-// Get the theme toggle button and icon
 const themeToggle = document.getElementById("theme-toggle");
 const themeIcon = document.getElementById("theme-icon");
 
-// Add event listener to the theme toggle button
 themeToggle.addEventListener("click", () => {
-  // Check if the theme icon is a sun or a moon
-  const isSunIcon = themeIcon.classList.contains("fa-sun");
+  themeIcon.classList.toggle("fa-sun");
+  themeIcon.classList.toggle("fa-moon");
 
-  // Toggle the theme icon
-  themeIcon.classList.replace(
-    isSunIcon ? "fa-sun" : "fa-moon",
-    isSunIcon ? "fa-moon" : "fa-sun"
-  );
-
-  // Get all the elements that need to change when the theme changes
-  const lightModeElements = [
+  const elements = [
     document.body,
     document.querySelector("header"),
     document.querySelector("main"),
@@ -26,11 +17,10 @@ themeToggle.addEventListener("click", () => {
     document.querySelector(".projects ul a"),
   ];
 
-  // Toggle the light-mode class on the elements
-  lightModeElements.forEach((el) => el.classList.toggle("dark-mode"));
+  elements.forEach((el) => el.classList.toggle("dark-mode"));
 });
 
-const pfpElement = document.getElementById("profile-pic"); // assuming your PFP has an ID of 'pfp'
+const pfpElement = document.getElementById("profile-pic");
 const images = [
   "aot.jpeg",
   "dark.jpeg",
@@ -38,10 +28,12 @@ const images = [
   "naruto.jpeg",
   "naruto2.jpeg",
   "pfp.jpeg",
-]; // array of image sources
+];
+
 let currentImageIndex = 0;
 
 setInterval(() => {
   pfpElement.src = images[currentImageIndex];
   currentImageIndex = (currentImageIndex + 1) % images.length;
 }, 5000);
+

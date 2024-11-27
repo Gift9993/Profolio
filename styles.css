@@ -248,6 +248,7 @@ section ul {
 .contact-links ul li a:hover {
     background-color: #ff6347; /* Tomato color on hover */
     color: #333333;
+    text-decoration: none;
 }
 
 footer {
