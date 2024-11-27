@@ -9,9 +9,9 @@
 body {
     font-family: cursive, sans-serif;
     line-height: 1.6;
-    color: #ffffff;
+    color: #000000;
     padding: 0 2%;
-    background-image: url(02ce6955-a962-406d-b309-40bbf3a90784.jpeg);
+    background-image: url(naruto.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -24,7 +24,7 @@ header {
     background-color: rgba(255, 255, 255, 0.086);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
-    color: #ffffff;
+    color: #000000;
     padding: 2em 2%;
     border-radius: 8px;
     position: relative;
@@ -241,7 +241,7 @@ section ul {
     padding: 0.5em 1em;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
-    color: #ffffff;
+    color: #000000;
 }
 
 .contact-links ul li a:hover {
